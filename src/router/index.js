@@ -6,22 +6,14 @@ Vue.use(Router);
 const routes = [
   {
     path: "/",
-    component: () => import("@/views/layout"),
-  },
-  {
-    path: "/map",
     name: "map",
     component: () => import("@/views/map/index.vue"),
-    hidden: true,
-    meta: {
-      title: "地图",
-    },
   },
 ];
 
 const createRouter = () =>
   new Router({
-    mode: "hash",
+    mode: "history",
     base: process.env.BASE_URL,
     scrollBehavior: () => ({
       y: 0,
