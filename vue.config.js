@@ -7,7 +7,7 @@ const isDev = process.env.NODE_ENV === "development";
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: "/",
+  publicPath: "/testWeixin/",
   outputDir: 'dist',
   productionSourceMap: isDev,
   devServer: {
