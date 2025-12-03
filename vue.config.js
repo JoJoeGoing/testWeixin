@@ -7,8 +7,8 @@ const isDev = process.env.NODE_ENV === "development";
 
 module.exports = defineConfig({
   transpileDependencies: true,
-  publicPath: isDev ? "/" : "/" + process.env.VUE_APP_BUILD_PATH,
-  outputDir: process.env.VUE_APP_BUILD_PATH,
+  publicPath: "/",
+  outputDir: 'dist',
   productionSourceMap: isDev,
   devServer: {
     port: 8089,
